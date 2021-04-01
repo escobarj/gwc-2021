@@ -18,5 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('gwc.urls')),
+    path('', include('gwc.urls')),      # GWC-Comment: Here we tell the site to look for urls in our app
 ]

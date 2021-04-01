@@ -20,18 +20,25 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# GWC-Comment: In real world websites, SECRET_KEY should be kept secrect and should be unique.
+#     For our purposes this is ok.
 SECRET_KEY = '_$z(a4fg=au_9-)q#*nk=v-ej2avi#2hrwlw$=u-+@a%y-66e@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# GWC-ToDo: Change "escobarj" below to your own PythonAnywhere user name
+# GWC-Comment: ALLOWED_HOSTS tells Django which web addresses to allow. 
+#     In some cases, like testing on your own computer, you may want to allow
+#     any address. To do this use ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS = ['escobarj.pythonanywhere.com']
+# ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'gwc.apps.SampleConfig',
+    'gwc.apps.GwcConfig',        # GWC-Comment: We add our app here. The exact name is found in apps.py
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -106,6 +113,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
+# GWC-Comment: By default, Django uses UTC timezone, but we can set it to ours like we did below.
+#    You can find the correct time zone names here https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 TIME_ZONE = 'America/Los_Angeles'
 
 USE_I18N = True

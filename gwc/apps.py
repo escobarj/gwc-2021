@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class SampleConfig(AppConfig):
+class GwcConfig(AppConfig):
     name = 'gwc'
