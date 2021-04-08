@@ -9,4 +9,6 @@ from . import views
 urlpatterns = [
     path('', views.homepage, name='home'),
     path('joke/', views.joke, name='joke'),
+    path('count/', views.count, name='count'),
+    path('result/', views.result, name='result'),
 ]
