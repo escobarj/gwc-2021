@@ -25,6 +25,9 @@ def count(request):
 def result(request):
     context = {'nav_count': 'active'}
 
+    name = request.POST['name']
+    context['name'] = name
+
     fulltext = request.POST['fulltext']
     words = fulltext.split()
     word_count = len(words)

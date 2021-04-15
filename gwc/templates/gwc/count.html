@@ -9,6 +9,10 @@
     <form action="{% url 'result' %}" method="post">
         {% csrf_token %}
         <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Joe Smith">
+        </div>
+        <div class="mb-3">
             <label for="fulltext" class="form-label">Enter your text below</label>
             <textarea class="form-control" id="fulltext" name="fulltext" rows="3"></textarea>
         </div>

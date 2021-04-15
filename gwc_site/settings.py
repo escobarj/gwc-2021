@@ -31,8 +31,8 @@ DEBUG = True
 # GWC-Comment: ALLOWED_HOSTS tells Django which web addresses to allow. 
 #     In some cases, like testing on your own computer, you may want to allow
 #     any address. To do this use ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['escobarj.pythonanywhere.com']
-# ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['escobarj.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
