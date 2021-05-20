@@ -1,0 +1,22 @@
+/* The default color for links is too dark, with theme's primary color set to bluegrey */
+.md-typeset a:link {
+  color: RoyalBlue;
+  text-decoration: underline;
+}
+.md-typeset a:visited {
+  color: RoyalBlue;
+}
+
+
+/* other possible colors for links
+cadetblue
+teal
+darkcyan
+
+default blue/purple
+0000EE
+551A8B
+
+darkslategrey
+lightslategrey
+*/

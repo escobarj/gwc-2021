@@ -1,0 +1,29 @@
+.md-sidebar {
+  display: none;
+}
+
+.md-header {
+  display: none;
+}
+
+.md-footer {
+  display: none;
+}
+
+.hero-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px; 
+  padding-bottom: 50px;
+  width: 75%;
+}
+
+.hero-img-sm {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px; 
+  padding-bottom: 35px;
+  width: 50%;
+}

@@ -11,4 +11,7 @@ urlpatterns = [
     path('joke/', views.joke, name='joke'),
     path('count/', views.count, name='count'),
     path('result/', views.result, name='result'),
+    path('events/', views.events, name='events'),
+    path('puzzles/', views.puzzles, name='puzzles'),
+    path('resources/', views.resources, name='resources'),
 ]

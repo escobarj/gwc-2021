@@ -1,0 +1,33 @@
+{% extends 'gwc/base.html'%}
+{% load static %}
+
+{% block content %}
+
+<div class="card-group">
+   <div class="card" style="width: 18rem;">
+     <img src="{% static 'images/gwc.jpg' %}" class="card-img-top" alt="Picture of a dog">
+     <div class="card-body">
+       <h5 class="card-title">Small Image Card</h5>
+       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+       <a class="btn btn-primary btn-lg" href={% url 'home' %}>Home</a>
+     </div>
+   </div>
+   <div class="card" style="width: 18rem;">
+     <img src="{% static 'images/college loops.png' %}" class="card-img-top" alt="College Loops">
+     <div class="card-body">
+       <h5 class="card-title">Small Image Card</h5>
+       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+       <a class="btn btn-primary btn-lg"  href="https://girlswhocode.com/programs/summer-immersion-program">Visit this site</a>
+     </div>
+   </div>
+   <div class="card" style="width: 18rem;">
+     <img src="{% static 'images/summer programs.jpg' %}" class="card-img-top" alt="gwc summer program">
+     <div class="card-body">
+       <h5 class="card-title">Small Image Card</h5>
+       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+       <a class="btn btn-primary btn-lg" href={% url 'home' %}>Home</a>
+     </div>
+   </div>
+</div>
+
+{% endblock %}

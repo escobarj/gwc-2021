@@ -28,11 +28,13 @@ SECRET_KEY = '_$z(a4fg=au_9-)q#*nk=v-ej2avi#2hrwlw$=u-+@a%y-66e@'
 DEBUG = True
 
 # GWC-ToDo: Change "escobarj" below to your own PythonAnywhere user name
-# GWC-Comment: ALLOWED_HOSTS tells Django which web addresses to allow. 
+# GWC-Comment: ALLOWED_HOSTS tells Django which web addresses to allow.
 #     In some cases, like testing on your own computer, you may want to allow
 #     any address. To do this use ALLOWED_HOSTS = ['*']
-# ALLOWED_HOSTS = ['escobarj.pythonanywhere.com']
-ALLOWED_HOSTS = ['*']
+
+ALLOWED_HOSTS = ['escobarj.pythonanywhere.com']
+# ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
