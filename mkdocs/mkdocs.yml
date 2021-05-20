@@ -1,0 +1,57 @@
+# Project information
+site_name: 'KHS GWC 2021'
+site_description: 'Kimball High GWC 2021'
+site_author: 'Jorge Escobar'
+site_url: 'https://escobarj.pythonanywhere.com/static/docs/'
+
+# Repository
+repo_name: 
+repo_url: 
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  logo: 
+  palette:
+    primary: 'blue grey'
+    accent: 'cyan'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  feature:
+    tabs: false
+
+extra_css:
+  - assets/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css
+#   - assets/css/extra.css
+
+
+# Extensions
+markdown_extensions:
+  - toc:
+      permalink: true
+  # - nl2br
+  # - sane_lists
+  # - fontawesome_markdown
+  - admonition
+  - codehilite
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Documentation pages
+nav:
+  - Home: index.md
